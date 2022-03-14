@@ -3,9 +3,12 @@ package com.fusionarc.cart.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
+
 import com.fusionarc.cart.entity.Product;
 import com.fusionarc.cart.repo.ProductRepo;
 
+@Service
 public class ProductService implements ServiceMethods<Product>{
 	
 	private ProductRepo repo;
