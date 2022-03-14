@@ -1,5 +1,22 @@
 package com.fusionarc.cart.service;
 
-public interface ServiceMethods {
+import java.util.List;
+
+public interface ServiceMethods<T> {
+	
+	// Create Method
+	T create(T product);
+	
+	// Read All Method
+	List<T> readAll();
+	
+	// Read by Id Method
+	T readById(long id);
+	
+	// Update Method
+	T update(long id, T product);
+	
+	// Delete Method
+	T delete(long id);
 
 }
