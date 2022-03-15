@@ -99,7 +99,7 @@ public class Product {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(description, id, inStock, price, title);
+		return Objects.hash(description, inStock, price, title);
 	}
 
 	@Override
@@ -111,15 +111,15 @@ public class Product {
 		if (getClass() != obj.getClass())
 			return false;
 		Product other = (Product) obj;
-		return Objects.equals(description, other.description) && id == other.id && inStock == other.inStock
+		return Objects.equals(description, other.description) && inStock == other.inStock
 				&& Double.doubleToLongBits(price) == Double.doubleToLongBits(other.price)
 				&& Objects.equals(title, other.title);
 	}
 
 	@Override
 	public String toString() {
-		return "Product [id=" + id + ", title=" + title + ", description=" + description + ", price=" + price
-				+ ", inStock=" + inStock + "]";
+		return "Product\n\tid: " + id + "\n\ttitle: " + title + "\n\tdescription: " + description + "\n\tprice: £" + price
+				+ "\n\tIn Stock: " + inStock;
 	}
 	
 }
