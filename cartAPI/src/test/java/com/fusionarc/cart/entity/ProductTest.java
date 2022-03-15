@@ -81,5 +81,12 @@ public class ProductTest {
 		assertEquals(productOne.getPrice(), 1.30);
 		assertEquals(productOne.isInStock(), true);
 	}
+	
+	@Test
+	public void toStringTest() {
+		Product prod = new Product("Bread", "White Loaf", 1.25, true);
+		assertEquals(prod.toString(), "Product\n\tid: 0\n\ttitle: Bread\n\tdescription: White Loaf\n\tprice: £1.25\n\tIn Stock: true");
+		
+	}
 
 }
