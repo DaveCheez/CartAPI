@@ -99,7 +99,7 @@ public class Product {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(description, id, inStock, price, title);
+		return Objects.hash(description, inStock, price, title);
 	}
 
 	@Override
@@ -111,7 +111,7 @@ public class Product {
 		if (getClass() != obj.getClass())
 			return false;
 		Product other = (Product) obj;
-		return Objects.equals(description, other.description) && id == other.id && inStock == other.inStock
+		return Objects.equals(description, other.description) && inStock == other.inStock
 				&& Double.doubleToLongBits(price) == Double.doubleToLongBits(other.price)
 				&& Objects.equals(title, other.title);
 	}
