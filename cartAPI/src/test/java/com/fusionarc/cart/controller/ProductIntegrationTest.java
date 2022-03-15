@@ -2,6 +2,8 @@ package com.fusionarc.cart.controller;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -77,7 +79,7 @@ public class ProductIntegrationTest {
 		
 	}
 	
-	
+	// Test Read By Id	
 	@Test
 	public void testReadById() throws Exception {
 		
@@ -92,4 +94,19 @@ public class ProductIntegrationTest {
 		
 		mvc.perform(req).andExpect(checkBody).andExpect(checkStatus);
 	}
-}
+	
+	// Test Update
+	@Test
+	public void testUpdate() throws Exception {
+					
+		Product milk = new Product(1, "Milk", "Whole Milk, 4 pints", 1.30, true);
+		String milkAsJSON = this.obj.writeValueAsString(milk);
+		
+		RequestBuilder req = put("/product/update/1").content(milkAsJSON).contentType(MediaType.APPLICATION_JSON);
+		
+		ResultMatcher checkStatus = status().isAccepted();
+		ResultMatcher checkBody = content().json(milkAsJSON);
+		
+		mvc.perform(req).andExpect(checkBody).andExpect(checkStatus);
+	}
+ }
