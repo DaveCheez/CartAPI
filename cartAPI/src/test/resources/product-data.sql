@@ -1,0 +1,1 @@
+INSERT INTO `product` (`title`, `description`, `price`, `in_stock`) VALUES ('Bread', 'White Loaf', 1.25, 1);
