@@ -93,6 +93,7 @@ public class ProductIntegrationTest {
 		ResultMatcher checkBody = content().json(productOneAsJSON);
 		
 		mvc.perform(req).andExpect(checkBody).andExpect(checkStatus);
+		
 	}
 	
 	// Test Update
@@ -108,5 +109,17 @@ public class ProductIntegrationTest {
 		ResultMatcher checkBody = content().json(milkAsJSON);
 		
 		mvc.perform(req).andExpect(checkBody).andExpect(checkStatus);
+		
+	}
+	
+	// Test Delete
+	@Test
+	public void testDelete() throws Exception {
+		RequestBuilder req = delete("/product/delete/1");
+		
+		ResultMatcher checkStatus = status().isNoContent();
+		
+		this.mvc.perform(req).andExpect(checkStatus);
+		
 	}
  }
