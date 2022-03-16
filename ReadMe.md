@@ -41,4 +41,29 @@
 
 ![Postman Delete Method](/Screenshots/Postman/Product%20Delete.png)
 
+
+
 ---
+
+# <center>Testing</center>
+
+### All Tests
+
+![All Tests](/Screenshots/Testing/All%20Tests.png)
+
+---
+
+### Integration Tests
+![Integration Tests](/Screenshots/Testing/IntegrationTests_1.png)
+
+---
+
+### Entity Unit Tests
+
+![Entity Unit Tests](/Screenshots/Testing/EntityUnitTests.png)
+
+---
+
+### Test Coverage
+
+![Test Coverage](/Screenshots/Testing/UpdatedCoverage.png)
