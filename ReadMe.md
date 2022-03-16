@@ -102,3 +102,7 @@
 
 ![Network Graph](/Screenshots/Network%20Graph.png)
 ![Network Graph](/Screenshots/Network%20Graph%20Updated.png)
+
+# <center>Risk Assessment</center>
+
+![Risk Assessment](/Screenshots/Risk%20Assesment.png)
