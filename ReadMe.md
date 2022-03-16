@@ -16,3 +16,29 @@
 ### <center>Postman Create Method 2</center>
 
 ![Postman Create Method](/Screenshots/Postman/Product%20Create%202.png)
+
+---
+
+### <center>Postman Read All Method</center>
+
+![Postman Read All Method](/Screenshots/Postman/Product%20Read%20All.png)
+
+---
+
+### <center>Postman Read By Id Method</center>
+
+![Postman Create Method](/Screenshots/Postman/Product%20Read%20By%20Id.png)
+
+---
+
+### <center>Postman Update Method</center>
+
+![Postman Update Method](/Screenshots/Postman/Product%20Update.png)
+
+---
+
+### <center>Postman Delete Method</center>
+
+![Postman Delete Method](/Screenshots/Postman/Product%20Delete.png)
+
+---
