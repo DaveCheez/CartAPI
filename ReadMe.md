@@ -107,3 +107,37 @@
 # <center>Risk Assessment</center>
 
 ![Risk Assessment](/Screenshots/Risk%20Assesment.png)
+
+---
+
+# <center>Enhancing the API</center>
+
+## <center>*If the client requests to read an ID that does not exist in the database*</center>
+### <center>We now return a 404 Response NOT FOUND</center>
+
+&nbsp;
+
+### Postman Read By ID Method when record does not exist (404 response)
+![Postman Read By ID Method when record does not exist (404 response)](/Screenshots/Postman/ReadById%20does%20not%20exist.png)
+
+---
+
+&nbsp;
+## <center>*If the client requests to update an ID that does not exist in the database*</center>
+### <center>We now return a 404 Response NOT FOUND</center>
+
+&nbsp;
+
+### Postman Update By ID Method when record does not exist (404 response)
+![Postman Update By ID Method when record does not exist (404 response)](/Screenshots/Postman/UpdateById%20does%20not%20exist.png)
+
+---
+&nbsp;
+
+## <center>*If the client requests to delete an ID that does not exist in the database*</center>
+### <center>We now return a 404 Response NOT FOUND</center>
+
+&nbsp;
+
+### Postman Delete By ID Method when record does not exist (404 response)
+![Postman Delete By ID Method when record does not exist (404 response)](/Screenshots/Postman/DeleteById%20does%20not%20exist.png)
