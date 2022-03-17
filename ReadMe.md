@@ -1,8 +1,18 @@
 # <center>CartAPI</center>
 ## <center>A Spring Boot REST API utilizing CRUD methods to imitate a Shopping Cart by providing a Client the option to insert, update, read and delete product data to a database via http.</center>
 
-*All Supporting Documentation is found within the [Screenshots](/Screenshots/) folder*
+
 ---
+
+&nbsp;
+## *All Supporting Documentation is found within the [Screenshots](/Screenshots/) folder*
+
+&nbsp;
+
+---
+
+&nbsp;
+
 ### <center>App Running Locally</center>
 ![Application Running Locally](/Screenshots/Application%20Running.png "Application Running Locally")
 
@@ -140,4 +150,4 @@
 &nbsp;
 
 ### Postman Delete By ID Method when record does not exist (404 response)
-![Postman Delete By ID Method when record does not exist (404 response)](/Screenshots/Postman/DeleteById%20does%20not%20exist.png)
+![Postman Delete By ID Method when record does not exist (404 response)](/Screenshots/Postman/DeleteById%20does%20not%20exist.jpg)
